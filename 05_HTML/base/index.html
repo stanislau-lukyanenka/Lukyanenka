@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table width="100%" border="3">
+        <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+            <tr>
+                <th>
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+                        <INPUT TYPE="text" MAXLENGTH="10">
+                        <input type="submit" value="Искать">
+                        <br> <label>
+                            <input type="checkbox" name=“val_1" id="chbox1" checked> На сайте
+                        </label>
+                        <label>
+                            <input type="checkbox" name="val_2" id="chbox2"> В Google
+                        </label>
+
+                    </fieldset>
+                </th>
+                <th>
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+                        <INPUT TYPE="text" MAXLENGTH="10" autofocus>
+                        <input type="submit" value="Искать">
+
+                        <br><label>
+                            <input type="checkbox" name=“val_1" id="chbox1" checked> На сайте
+                        </label>
+                        <label>
+                            <input type="checkbox" name="val_2" id="chbox2"> В Google
+                        </label>
+
+                    </fieldset>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <fieldset>
+                        <legend>Авторизируйтесь</legend>
+                        <input type="text">
+                        <label for="logn">Логин</label><br>
+
+                        <input type="text">
+                        <label for="passwrd">Пароль</label>
+                        <br><label>
+                            <input type="checkbox" name=“val_1" id="chbox1" checked> Остаться в системе
+                        </label>
+                        <br><input type="submit" value="Войти">
+                    </fieldset>
+                </th>
+                <th>
+                    <fieldset>
+                        <legend>Как вам?</legend>
+                        <input type="radio" name="ничего" value="ничего"><br>
+                        <input type="radio" name="неплохо" value="неплохо"><br>
+                        <input type="radio" name="хорошо" value="хорошо"><br>
+                        <input type="radio" name="супер" value="супер"><br>
+                        <br><input type="submit" value="Войти">
+                    </fieldset>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <fieldset>
+                        <legend>Оставьте Ваш отзыв</legend>
+                        <input type="text"><br>
+                        <input type="email" name=“email” placeholder="это обязательное поле" required> <br>
+                        <textarea name="text" lang="ru">
+                            Форма отправки
+                        </textarea>
+                        <br><input type="submit" value="Отправить">
+
+                    </fieldset>
+
+
+                </th>
+                <th>
+                    <fieldset>
+                        <legend>Города РБ</legend>
+                        <select name="list" id="list">
+                            <option value="0">Город</option>
+                            <option value="1">БРЕСТ</option>
+                            <option value="2">МИНСК</option>
+                            <option value="3">ГОМЕЛЬ</option>
+
+
+
+                        </select>
+                        <select name="list[]" size="7" multiple id="list">
+                            <option value="4" disabled>Города РБ</option>
+                            <option value="1" selected>Минск</option>
+                            <option value="2" selected>Брест</option>
+                            <option value="3" selected>Витебск</option>
+                            <option value="4" disabled>Города России</option>
+                            <option value="5" selected>Москва</option>
+                            <option value="6" selected>Рязань</option>
+                            <option value="7" selected>Магадан</option>
+                        </select>
+                        <br><input type="submit" value="Оk">
+
+                    </fieldset>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <fieldset>
+                        <legend>Upload</legend>
+                        <input type="file" name="file" dir="ltr"><br>
+                        <input type="text" name="file">Срок хранения (года):
+
+                        <br><input type="submit" value="Отправить">
+
+                        
+                    </fieldset>
+                </th>
+                <th>
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+                        <input type="text" placeholder="Только русские буквы"><br>
+                       Телефонный номер в формате
+                        +ХХХ-ХХ-ХХХХХХХ, где Х - любое число
+                        <br><input type="text" name="text" placeholder="+375-29-1234567" pattern="[0-9]{.14}">
+                        <br><input type="submit" value="Отправить">
+
+                    </fieldset>
+                </th>
+            </tr>
+
+    </table>
+    </form>
+</body>
+
+</html>
