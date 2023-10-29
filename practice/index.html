@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post">
+        <h1>Форма заявки на работу в зоопарк</h1>
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <input type="text"> Имя <br>
+            <input type="text"> Телефон <br>
+            <input type="email" name=“email” placeholder="это обязательное поле" required> Почта <br>
+        </fieldset>
+        <fieldset>
+            <legend>Персональная информация</legend>
+            Возраст <input type="text"><br>
+            Пол <select name="list" id="list">
+                <option value="1">Мужской</option>
+                <option value="2">Женский</option>
+            </select><br>
+            Перечислите личные качества <textarea>Текст </textarea>
+
+        </fieldset>
+        <fieldset>
+            <legend>Ваши любимые животные</legend>
+            <label>
+                <input type="checkbox" name="hobby[]"> Слон
+                <input type="checkbox" name="hobby[]"> Зебра
+                <input type="checkbox" name="hobby[]"> Медведь
+                <input type="checkbox" name="hobby[]"> Дельфин
+            </label><br>
+            <label>
+                <input type="checkbox" name="hobby[]"> Енот
+                <input type="checkbox" name="hobby[]"> Лиса
+                <input type="checkbox" name="hobby[]"> Волк
+                <input type="checkbox" name="hobby[]"> Собака
+
+            </label><br>
+            <input type="submit" value="Отправить">
+
+
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
